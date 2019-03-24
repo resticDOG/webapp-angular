@@ -1,0 +1,10 @@
+# system
+# 系统包安装路径
+bower_components/
+node_modules/
+
+# 打包路径
+build/
+dist/
+
+

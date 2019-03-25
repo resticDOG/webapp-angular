@@ -8,6 +8,6 @@
 'use strict';
 
 // 定义全局模块
-angular.module('app', []);
+angular.module('app', ['ui.router']);
 
 

@@ -4,11 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>test</title>
+    <title>webapp</title>
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    张泽琰 ，爸爸妈妈都很想你，你快点好起来，回到爸爸妈妈的怀抱！Hello World!
-    <script src="vendor/angular/angular.min.js"></script>
+
+    <div ui-view>
+
+    </div>
+    <!-- 屏幕自适应设定 -->
+    <script>
+        document.getElementsByTagName('html')[0].style.fontSize = window.screen.width / 10 + 'px';
+    </script>
+    <script src="vendor/angular/angular.min.js" charset="utf-8"></script>
+    <script src="vendor/angular-ui-router/release/angular-ui-router.min.js" charset="utf-8"></script>
     <script src="js/index.js"></script>
 </body>
 </html>

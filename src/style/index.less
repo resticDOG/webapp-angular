@@ -1,1 +1,66 @@
-@import 'test.less';
+@import './template/head.less';
+@import './property.less';
+
+// 通用的函数，用于不同屏幕的自适应
+.fs(@px){
+    // unit是less内置的函数，用于将像素值转换成rem
+    font-size: unit(@px / 37.5, rem);
+}
+
+.w(@px){
+    width: unit(@px / 37.5, rem);
+}
+
+.h(@px){
+    height: unit(@px / 37.5, rem);
+}
+
+.lh(@px){
+    line-height: unit(@px / 37.5, rem);
+}
+
+// margin自适应
+.mt(@px){
+    margin-top: unit(@px / 37.5, rem);
+}
+
+.mr(@px){
+    margin-right: unit(@px / 37.5, rem);
+}
+
+.mb(@px){
+    margin-bottom: unit(@px / 37.5, rem);
+}
+
+.ml(@px){
+    margin-left: unit(@px / 37.5, rem);
+}
+
+// padding自适应
+.pt(@px){
+    padding-top: unit(@px / 37.5, rem);
+}
+
+.pr(@px){
+    padding-right: unit(@px / 37.5, rem);
+}
+
+.pb(@px){
+    padding-bottom: unit(@px / 37.5, rem);
+}
+
+.pl(@px){
+    padding-left: unit(@px / 37.5, rem);
+}
+// 通用样式
+html,body{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+// body字体大小设为16
+body{
+    .fs(16);
+}

@@ -1,0 +1,25 @@
+@import '../variable.less';
+
+.head{
+    background-color: @headBgColor;
+    // 文案
+    .text{
+        .ml(7);
+        color: @defaultColor;
+    }
+    // 按钮
+    .custom{
+        .mt(7);
+        .mr(7);
+        .pl(15);
+        .pr(15);
+        background-color: @warnColor;
+        color: @defaultColor;
+        border-color: @warnColor;
+        border-style: dashed;
+    }
+    // 高度40转换为rem
+    .h(40);
+    // 行高40
+    .lh(40);
+}

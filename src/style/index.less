@@ -1,6 +1,7 @@
 @import './template/head.less';
 @import './property.less';
 @import './template/foot.less';
+@import './template/positionList.less';
 
 // 通用的函数，用于不同屏幕的自适应
 .fs(@px){
@@ -64,4 +65,5 @@ html,body{
 // body字体大小设为16
 body{
     .fs(16);
+    background-color: @bodyBgColor;
 }

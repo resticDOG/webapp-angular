@@ -11,6 +11,10 @@ angular.module('app').config(['$stateProvider', '$urlRouterProvider', function (
         url         : '/main',              // 路由id
         templateUrl : 'view/main.html',     // 模板路径
         controller  : 'mainCtrl'            // 控制器
+    }).state('position', {
+        url         : '/position/:id',
+        templateUrl : 'view/position.html',
+        controller  : 'positionCtrl'
     });
     // 前面都匹配不到的路由统一转到main路由
     $urlRouterProvider.otherwise('main');

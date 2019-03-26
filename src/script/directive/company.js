@@ -9,6 +9,9 @@ angular.module('app').directive('appCompany', [function () {
     return {
         restrict: 'A',  // 属性注入指令
         replace: true, // 替换父元素，模板中只能有一个根元素
-        templateUrl: 'view/template/company.html'  // 模板路径
+        templateUrl: 'view/template/company.html',  // 模板路径
+        scope : {
+            com : '='
+        }
     };
 }]);

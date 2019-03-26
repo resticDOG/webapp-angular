@@ -15,6 +15,10 @@ angular.module('app').config(['$stateProvider', '$urlRouterProvider', function (
         url         : '/position/:id',
         templateUrl : 'view/position.html',
         controller  : 'positionCtrl'
+    }).state('company', {
+        url         : '/company/:id',
+        templateUrl : 'view/companyDetail.html',
+        controller  : 'companyCtrl'
     });
     // 前面都匹配不到的路由统一转到main路由
     $urlRouterProvider.otherwise('main');

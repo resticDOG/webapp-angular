@@ -1,0 +1,41 @@
+.search-sheet{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, .2);
+    .wrap{
+        position: fixed;
+        left: 8px;
+        right: 8px;
+        bottom: 8px;
+        z-index: 100;
+        li,button{
+            color: @sheetFontCl;
+            background-color: @sheetBgColor;
+            .fs(16);
+            .h(50);
+            .lh(50);
+            width: 100%;
+        }
+        ul{
+            margin: 0;
+            padding: 0;
+            // 需要隐藏才能表现出圆角，
+            // 同时在高度超过最大高度之后可以滚动查看
+            overflow: scroll;
+            border-radius: 5px;
+            max-height: 500px;
+        }
+        li{
+            list-style: none;
+            border-bottom: 1px solid @lineColor;
+        }
+        button{
+            margin-top: 8px;
+            border-radius: 5px;
+        }
+    }
+}

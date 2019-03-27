@@ -19,6 +19,10 @@ angular.module('app').config(['$stateProvider', '$urlRouterProvider', function (
         url         : '/company/:id',
         templateUrl : 'view/companyDetail.html',
         controller  : 'companyCtrl'
+    }).state('search', {
+        url: '/search',
+        templateUrl: 'view/search.html',
+        controller: 'searchCtrl'
     });
     // 前面都匹配不到的路由统一转到main路由
     $urlRouterProvider.otherwise('main');

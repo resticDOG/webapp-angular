@@ -38,6 +38,7 @@ gulp.task('json', function(){
 // 编译less，由于less用的一个index文件引入多个文件，所以只需编译一个总文件即可
 gulp.task('less', function(){
     gulp.src(app.srcPath + 'style/index.less')
+        .pipe($.plumber())
         .pipe($.less())
         .pipe(gulp.dest(app.devPath + 'css'))
         .pipe($.cssmin())
@@ -48,6 +49,7 @@ gulp.task('less', function(){
 // js任务，合并script下所有js到一个文件，生产环境需要进行压缩
 gulp.task('js', function(){
     gulp.src(app.srcPath + 'script/**/*.js')
+        .pipe($.plumber())
         .pipe($.concat('index.js'))
         .pipe(gulp.dest(app.devPath + 'js'))
         .pipe($.uglify())
@@ -58,6 +60,7 @@ gulp.task('js', function(){
 // image文件处理
 gulp.task('image', function(){
     gulp.src(app.srcPath + 'images/**/*')
+        .pipe($.plumber())
         .pipe(gulp.dest(app.devPath + 'images'))
         .pipe($.imagemin())
         .pipe(gulp.dest(app.prdPath + 'images'))

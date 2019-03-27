@@ -7,7 +7,7 @@
 // 严格模式
 'use strict';
 
-// 定义全局模块
-angular.module('app', ['ui.router']);
+// 定义全局模块,引入的依赖需要在数组中注入
+angular.module('app', ['ui.router', 'ngCookies']);
 
 

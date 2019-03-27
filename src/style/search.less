@@ -1,0 +1,35 @@
+.search-bar{
+    background-color: @headBgColor;
+    position: fixed;
+    left: 0;
+    right: 0;
+    .h(40);
+    .lh(40);
+    input{
+        background-color: @bodyBgColor;
+        border-radius: 80px;
+        // 清除默认边框
+        border-style: none;
+        outline-width: 0;
+        box-sizing: border-box;
+        .pl(20);
+        .h(25);
+        .w(190);
+    }
+    button{
+        background-color: @headBgColor;
+        &:first-child{
+            color: @defaultColor;
+        }
+        &:last-child{
+            // 背景图
+            background-image: url(../images/search.png);
+            background-repeat: no-repeat;
+            background-size: 15px 15px;
+            background-position: 0 4px;
+            padding-left: 20px;
+            margin-left: 10px;
+            color: @muteColor;
+        }
+    }
+}

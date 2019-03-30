@@ -4,5 +4,10 @@ angular.module('app').directive('appSearchSheet', [function () {
         restrict: 'A',
         replace: true,
         templateUrl: 'view/template/searchSheet.html',
+        scope : {
+            sheetList : '=',
+            visible : '=',
+            click : '&'
+        }
     }
 }]);

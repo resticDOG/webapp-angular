@@ -1,5 +1,5 @@
 <ul class="search-tab">
-    <li class="d-ib ta-c active">城市</li>
-    <li class="d-ib ta-c">薪资</li>
-    <li class="d-ib ta-c">公司规模</li>
+    <li ng-click="select(item)" 
+    class="d-ib ta-c {{item.id === selectedId ? 'active' : ''}}" 
+    ng-repeat="item in tabList" ng-bind="item.name"></li>
 </ul>

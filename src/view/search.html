@@ -4,7 +4,7 @@
     <button ng-click='search()'>搜索</button>
 </div>
 <div app-search-tab tab-list="tabList" tab-selected="tabSelected(id, name)"></div>
-<div class="search-list" app-position-list data="positionList"></div>
+<div class="search-list" app-position-list filter-obj="filterObj" data="positionList"></div>
 <!-- foot指令 -->
 <div app-foot></div>
 <div app-search-sheet click="sClick(id, name)" sheet-list="sheet.sheetList" visible="sheet.visible"></div>

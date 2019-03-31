@@ -11,7 +11,8 @@ angular.module('app').directive('appPositionList', [function(){
         templateUrl : 'view/template/positionList.html',
         // 暴露data接口
         scope       : {
-            data : '='
+            data        : '=',
+            filterObj   : '='
         }
     }
 }]);

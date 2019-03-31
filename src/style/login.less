@@ -1,0 +1,49 @@
+.login-con{
+    background-image: url(../images/background.png);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    .login-form{
+        .mt(260);
+        .form-item{
+            margin-left: auto;
+            margin-right: auto;
+            .w(300);
+            .h(40);
+        }
+        input{
+            border-width: 0;
+            outline-style: none;
+            background-color: @inputBgColor;
+            color: @defaultColor;
+            // placeholde选择器
+            &::-webkit-input-placeholder{
+                color: @defaultColor;
+            }
+            &:first-child{
+                border-bottom: 1px solid @defaultColor;
+            }       
+        }
+        .btn{
+            .h(35);
+            .lh(35);
+            font-size: 22px;
+            font-weight: bold;
+            border-radius: 3px;
+            &.login-btn{
+                margin-top: 75px;
+                color: @defaultColor;
+                background-color: @headBgColor;
+            }
+            &.register-btn{
+                margin-top: 20px;
+                color: @headBgColor;
+                background-color: @buttonBgColor;
+                border: 1px solid @headBgColor;
+            }
+        }
+
+    }
+}

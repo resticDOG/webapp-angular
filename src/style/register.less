@@ -1,12 +1,12 @@
-.login-con{
+.register-con{
     background-image: url(../images/background.png);
     position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    .login-form{
-        .mt(260);
+    .register-form{
+        .mt(65);
         .form-item{
             margin-left: auto;
             margin-right: auto;
@@ -24,9 +24,27 @@
             &::-webkit-input-placeholder{
                 color: @defaultColor;
             }
-            &:first-child{
-                border-bottom: 1px solid @defaultColor;
-            }       
+        }
+        .message-wrap{
+            .mt(40);
+            .h(40);
+            .w(300);
+            margin-left: auto;
+            margin-right: auto;
+            .message-box{
+                .h(40);
+                .w(190);
+                padding-left: 5px;
+            }
+            .send-btn{
+                .fs(14);
+                background-color: @buttonBgColor;
+                color: @headBgColor;
+                border: 1px solid @headBgColor;
+                padding: 2px;
+                margin-top: 8px;
+                border-radius: 3px;
+            }
         }
         .btn{
             .w(300);
@@ -65,6 +83,5 @@
                 }
             }
         }
-
     }
 }

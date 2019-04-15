@@ -8,6 +8,6 @@
 'use strict';
 
 // 定义全局模块,引入的依赖需要在数组中注入
-angular.module('app', ['ui.router', 'ngCookies']);
+angular.module('app', ['ui.router', 'ngCookies', 'validation']);
 
 

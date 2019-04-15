@@ -1,18 +1,18 @@
 <div class="register-con">
-    <form class="register-form ta-c d-b">
+    <form class="register-form ta-c d-b" name="form">
         <div class="filed p-r username">
             <label class="img username-img p-a d-ib"></label>
-            <input class="form-item d-ib" type="text" placeholder="请输入用户名">
+            <input ng-model="user.phone" validator="phone" class="form-item d-ib" type="text" placeholder="请输入用户名">
         </div>
         <div class="filed p-r passworld">
             <label class="img password-img p-a d-ib"></label>
-            <input class="form-item d-ib" type="password" placeholder="请输入6位以上的密码">
+            <input ng-model="user.password" validator="password" class="form-item d-ib" type="password" placeholder="请输入6位以上的密码">
         </div>
         <div class="filed message-wrap">
             <input type="text" placeholder="短信验证码" class="message-box f-l d-ib">
             <span class="send-btn f-r">发送短信</span>
         </div>
         <buttom class="btn d-b login-btn">登录</buttom>
-        <buttom class="btn d-b register-btn">注册</buttom>
+        <buttom validation-submit="form" ng-click="submit()" class="btn d-b register-btn">注册</buttom>
     </form>
 </div>
